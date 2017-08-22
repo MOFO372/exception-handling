@@ -75,7 +75,7 @@ public class ExceptionHandlingController {
 	      try {  
 	        mv.addObject("urlResult", new URL(probablyAUrl));
 	      } catch (MalformedURLException mue) {
-	    	 mv.addObject("urlResult", "please enter a URL");
+	    	 mv.addObject("urlFailure", "please enter a URL");
 	      }
 	        return mv;
 	    }  
